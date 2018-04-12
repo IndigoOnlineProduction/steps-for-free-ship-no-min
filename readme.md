@@ -11,17 +11,20 @@ PLEASE NOTE!!
 You’ll see that the free shipping message is repeated in English, that second one is for any geo-targeting that might be happening.
 
 EG: this is what is up at the moment:
+```
 <div class="headband  slider">
 <div><a href="/freeshipping"><span>Free Shipping</span> to any store & on all orders<span> over $25*</span></a></div>
 <div class="geotarget"><a href="/freeshipping"><span>Free Shipping</span> to any store & on all orders<span> over $25*</span></a></div>
 </div>
+```
 
 You need to update both instances, so it would be like this (it should link to /free-ship-no-min which is a page that MG handles):
+```
 <div class="headband  slider">
         <div><a href="/free-ship-no-min">Free Shipping <span>NO MINIMUM</span> to Wednesday</a></div>
         <div class="geotarget”><a href="/free-ship-no-min">Free Shipping <span>NO MINIMUM</span> to Wednesday</a></div>
 </div>
-
+```
 FYI: do NOT change the HB title in extra tools (Header Marketing Messages)
 
 Workarea link for scheduling it:
@@ -60,26 +63,31 @@ if you get lost or go too far back in history for the Control Block, here are th
 For ENGLISH:
 
 NO MIN: ON styles are:
+```
 <style type="text/css">
     .freeShipHdr, .freeTitle {display:none;}
     .noMinLegal {font-size: 12px; line-height: 20px;}
     .shipping span {display:none;}
 </style>
+```
 
 And the NO MIN: OFF
+```
 <style>
     .noMinBanner, .noMinLegal {display:none;}
 </style>
+```
 
 Until they update the French content to match the English,
 The ON/OFF styles are slightly different:
 
 NO MIN: ON
+```
 <style type="text/css">
     .freeShip25 {display:none;}
     .noMinLegal {font-size: 12px; line-height: 20px;}
 </style>
-
+```
 NO MIN: OFF
 <style type="text/css">
     .noMinBanner, .noMinLegal, .noMin {display:none;}
